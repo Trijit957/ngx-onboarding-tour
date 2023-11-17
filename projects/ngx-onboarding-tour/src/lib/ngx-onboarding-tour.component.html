@@ -1,0 +1,16 @@
+<div #container *ngIf="isShow">
+    <div #highlighter class="highlighter" *ngIf="isShowHighlighter"></div>
+    <div #info class="info" *ngIf="isShowInfo">
+        <div class="info__header">Heading</div>
+        <div class="info__description">
+           Description
+        </div>
+        <div class="info__footer">
+            <button (click)="skipStep()" class="info__footer__button skip-button">Skip</button>
+            <div class="info__action-buttons">
+                <button (click)="goPrevStep()" class="info__footer__button prev-button">Prev</button>
+                <button (click)="goNextStep()" class="info__footer__button next-button">Next</button>
+            </div>
+        </div>
+    </div>
+</div>

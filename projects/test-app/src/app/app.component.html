@@ -1,0 +1,21 @@
+<div class="container">
+  <h2 class="header">Hello World!</h2>
+  <p class="description" style="margin-top: 150px;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Saepe asperiores porro repellat, dolorum molestias consectetur
+       qui quisquam minima ad hic aliquid quo atque earum accusamus 
+       illum dolores id pariatur cumque!
+  </p>
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <button class="start-btn" (click)="startJourney()">
+    Start Journey
+  </button>
+
+  <button class="other-btn">
+    Button
+  </button>
+</div>
+
+<ngx-onboarding-tour [tour]="tour"></ngx-onboarding-tour>

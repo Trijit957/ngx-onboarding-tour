@@ -132,7 +132,7 @@ export class NgxOnboardingTourComponent implements OnChanges, AfterViewInit {
               case OrientationEnum.LEFT:
                         console.log("highlightedElement.offsetLeft", highlightedElement.offsetLeft)
                         infoElement.style.top = highlightedElement.offsetTop + (highlightedElementHeight - infoElement.offsetHeight) / 2 + 'px';
-                        infoElement.style.left = highlightedElement.offsetLeft - 20 + 'px';
+                        infoElement.style.left = (highlightedElement.offsetLeft -300 - 20) + 'px';
   
                         this.infoClasses.forEach(className => {
                           if(this.hasClassByElement({ element: this.infoElement.nativeElement, className: className})) {
